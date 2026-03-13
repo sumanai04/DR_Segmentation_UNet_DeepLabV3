@@ -1,0 +1,12 @@
+# Data and weights
+data/
+weights/
+/content/drive/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Outputs
+IDRID_Research_Final_Output/
