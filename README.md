@@ -27,3 +27,9 @@ This project uses the **Indian Diabetic Retinopathy Image Dataset (IDRiD)**.
            │   ├── 1. Microaneurysms/
            │   └── ...
            └── b. Testing Set/
+
+## Disclaimer
+The training pipeline, batch sizes, and hyperparameter tuning for this project were originally executed and optimized using **Google Colab**.
+With the specs: A100GPU (80gb Vram) and High Ram environment
+
+> **Note for Local Execution:** If you are running this code locally on a consumer GPU with less VRAM (e.g., 8GB or 12GB), you will likely encounter Out-Of-Memory (OOM) errors. To resolve this, navigate to `main.py` and reduce the `BATCH_SIZE` from `8` to `4` or `2`.
