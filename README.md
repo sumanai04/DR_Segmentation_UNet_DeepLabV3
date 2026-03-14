@@ -3,7 +3,7 @@
 This repository contains a comprehensive benchmark comparing **U-Net** and **DeepLabV3** architectures (using ResNet50 and ResNet101 backbones) for multi-class medical image segmentation of Diabetic Retinopathy lesions.
 
 The pipeline is optimized for high-resolution images ($1280 \times 1280$) and handles extreme class imbalance using a specialized **Hybrid Loss Function** (Cross-Entropy + Dice + Focal Loss).
-
+![image of multiple segmentation done by different models and encoders](https://github.com/sumanai04/DR_Segmentation_UNet_DeepLabV3/blob/main/IDRID_Research_Final_Output/legend_qualitative_masks.png)
 ## Key Features
 * **High-Resolution Training:** Utilizes PyTorch Automatic Mixed Precision (`torch.amp`) to fit $1280 \times 1280$ images into GPU memory.
 * **Modular Pipeline:** Decoupled data loading, loss calculation, evaluation, and plotting.
