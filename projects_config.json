@@ -1,0 +1,77 @@
+{
+  "github_user": "Sumanai04",
+  "repos": {
+    "DR_Segmentation_UNet_DeepLabV3": {
+      "category": "ml",
+      "display_name": "Diabetic Retinopathy Segmentation",
+      "description": "U-Net vs DeepLabV3+ benchmark on 1280x1280 fundus images. Uses a hybrid loss (CE + Dice + Focal), trained on an A100 GPU. Evaluates using AUPR, Dice, and IoU with macro-averaging across lesion classes.",
+      "tech": ["Computer Vision", "Python", "PyTorch", "CUDA", "U-Net", "DeepLabV3"],
+      "featured": true,
+      "thumbnail": "https://raw.githubusercontent.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3/main/IDRID_Research_Final_Output/DR U-NET.jpg"
+    },
+    "HandGestureSystem": {
+      "category": "ml",
+      "display_name": "Hand Gesture Recognition for IoT Control",
+      "description": "Real-time hand sign recognition pipeline using MobileNetV2 + MediaPipe. Trained on the Creative Senz3D dataset (~1,060 images, 11 gesture types across varying lighting). Classifies gestures into binary on/off commands for IoT device control — optimized for edge hardware.",
+      "tech": ["Python", "TensorFlow", "MediaPipe", "MobileNetV2", "IoT"],
+      "featured": true
+    },
+    "StuntingApp": {
+      "category": "sw",
+      "display_name": "StuntingApp",
+      "description": "A web-based stunting detection app built for Desa Panyingkiran, designed to run on low-end devices for maximum accessibility.",
+      "tech": ["HTML", "Javascript"]
+    },
+    "Receipt-Inator": {
+      "category": "sw",
+      "display_name": "Receipt-Inator",
+      "description": "Split restaurant bills from receipt photos — snap a pic, auto-extract items with DeepSeek Vision + Tesseract OCR, assign to friends, and see who owes what.",
+      "tech": ["Next.js", "Typescript", "Tailwind", "React"],
+      "featured": true
+    },
+    "WebAgenticStarterKit": {
+      "category": "sw",
+      "display_name": "WebAgenticStarterKit",
+      "description": "Dual-agent boilerplate for AI-assisted full-stack development. Routes code generation to DeepSeek V4 and file reading to local Gemma 3 (via Ollama) through a LiteLLM proxy, slashing API costs. Ships with Next.js, FastAPI, and PostgreSQL.",
+      "tech": ["Next.js", "FastAPI", "PostgreSQL", "LiteLLM", "DeepSeek", "Ollama"],
+      "featured": true
+    },
+    "MobAppOTP": {
+      "category": "sw",
+      "display_name": "MobAppOTP",
+      "description": "A mobile app testing cloud-based OTP token authentication using Firebase. Built with Flutter and Dart.",
+      "tech": ["Flutter", "Dart", "Java", "Firebase"]
+    },
+    "Boolean-Retriaval-System": {
+      "category": "ds",
+      "display_name": "Boolean Retrieval System",
+      "description": "Information retrieval engine supporting boolean queries (AND, OR, NOT) over a news article corpus. Built with NLTK for text processing and Pandas for inverted index construction.",
+      "tech": ["Python", "Pandas", "NLTK"]
+    },
+    "Genetic-Algorithm-Regression-Model": {
+      "category": "ds",
+      "display_name": "Genetic Algorithm Regression Model",
+      "description": "A regression model analyzing CS:GO weapon skin market trends on Steam. The same genetic algorithm approach also applies to stock market forecasting.",
+      "tech": ["Python", "Pandas", "Seaborn", "matplotlib"],
+      "owner_override": "louiswids"
+    },
+    "MultiDiseaseClassification_ML": {
+      "category": "ml",
+      "display_name": "Disease Classification System",
+      "description": "A machine learning model for classifying multiple diseases based on their risk factors. A comparative study of SVM vs Random Forest on a Kaggle medical dataset.",
+      "tech": ["Python", "SVM", "RandomForest"]
+    },
+    "Covid-19-Dasboard-App": {
+      "category": "ds",
+      "display_name": "Covid 19 Dashboard App",
+      "description": "A web dashboard visualizing COVID-19 pandemic data including mortality rates, survival rates, and case trends.",
+      "tech": ["Python", "Streamlit", "Seaborn", "matplotlib"]
+    },
+    "QuizzAppScalable": {
+      "category": "sw",
+      "display_name": "Redis based Quiz App",
+      "description": "A web quiz app testing Redis scalability by emulating concurrent user sessions with token-based authentication.",
+      "tech": ["Python", "Javascript", "CSS", "Redis"]
+    }
+  }
+}

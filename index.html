@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Portfolio of Fathi Al Adha Hylmi — machine learning engineer, software developer, and data scientist."/>
+<meta property="og:title" content="Portfolio — Fathi Al Adha Hylmi"/>
+<meta property="og:description" content="Building efficient models and finding robust engineering solutions. ML, deep learning, systems architecture, and photography."/>
+<meta property="og:type" content="website"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Portfolio — Fathi Al Adha Hylmi"/>
+<meta name="twitter:description" content="Machine learning engineer, software developer, data scientist, and photographer."/>
+<title>Portfolio — Fathi Al Adha Hylmi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="#hero" class="nav-logo">Fathi<span> A. </span>Hylmi</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#photography">Hobbies</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://github.com/Sumanai04" target="_blank">GitHub ↗</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+
+      <div class="hero-text fade-in">
+        <p class="hero-eyebrow">// PORTFOLIO \\</p>
+        <h1 class="hero-name">
+          Fathi <em>Al Adha</em> Hylmi
+        </h1>
+        <p class="hero-bio">
+          Computer science graduate focused on machine learning and computer vision. I build models that work end-to-end — from data pipeline to deployment. Currently exploring deep learning architectures for medical imaging and building tools that make complex analysis accessible.
+        </p>
+        <div class="hero-tags">
+          <span class="tag tag-ml">Machine/Deep Learning</span>
+          <span class="tag tag-sw">Software Dev</span>
+          <span class="tag tag-ds">Data Science</span>
+          <span class="tag tag-ph">IoT</span>
+          <span class="tag tag-ml">Photography</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#photography" class="btn btn-ghost">Peek at Hobbies</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <h2 class="section-title">Projects</h2>
+      <div class="section-line"></div>
+      <span class="section-count">github repos</span>
+    </div>
+
+    <div class="filter-tabs fade-in">
+      <button class="filter-tab active" data-filter="all">All</button>
+      <button class="filter-tab" data-filter="ml">ML / Deep Learning</button>
+      <button class="filter-tab" data-filter="sw">Software Dev</button>
+      <button class="filter-tab" data-filter="ds">Data Science</button>
+    </div>
+
+    <div class="projects-scroll">
+    <div class="projects-grid stagger" id="projectGrid">
+    <!-- PROJECTS_START -->
+      <a class="glass project-card featured" data-cat="ml" href="https://github.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3" target="_blank">
+        <div class="project-card-thumb">
+          <img src="https://raw.githubusercontent.com/Sumanai04/DR_Segmentation_UNet_DeepLabV3/main/IDRID_Research_Final_Output/DR U-NET.jpg" loading="lazy" alt="Diabetic Retinopathy Segmentation screenshot"/>
+        </div>
+        <div class="project-card-top">
+          <span class="project-type ml">ML / DL</span>
+        </div>
+        <div class="project-title">Diabetic Retinopathy Segmentation</div>
+        <div class="project-desc">
+          U-Net vs DeepLabV3+ benchmark on 1280x1280 fundus images. Uses a hybrid loss (CE + Dice + Focal), trained on an A100 GPU. Evaluates using AUPR, Dice, and IoU with macro-averaging across lesion classes.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Computer Vision</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">PyTorch</span>
+          <span class="tech-pill">CUDA</span>
+          <span class="tech-pill">U-Net</span>
+          <span class="tech-pill">DeepLabV3</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card featured" data-cat="ml" href="https://github.com/Sumanai04/HandGestureSystem" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type ml">ML / DL</span>
+        </div>
+        <div class="project-title">Hand Gesture Recognition for IoT Control</div>
+        <div class="project-desc">
+          Real-time hand sign recognition pipeline using MobileNetV2 + MediaPipe. Trained on the Creative Senz3D dataset (~1,060 images, 11 gesture types across varying lighting). Classifies gestures into binary on/off commands for IoT device control — optimized for edge hardware.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">TensorFlow</span>
+          <span class="tech-pill">MediaPipe</span>
+          <span class="tech-pill">MobileNetV2</span>
+          <span class="tech-pill">IoT</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="sw" href="https://github.com/Sumanai04/StuntingApp" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">StuntingApp</div>
+        <div class="project-desc">
+          A web-based stunting detection app built for Desa Panyingkiran, designed to run on low-end devices for maximum accessibility.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">Javascript</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card featured" data-cat="sw" href="https://github.com/Sumanai04/Receipt-Inator" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">Receipt-Inator</div>
+        <div class="project-desc">
+          Split restaurant bills from receipt photos — snap a pic, auto-extract items with DeepSeek Vision + Tesseract OCR, assign to friends, and see who owes what.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Next.js</span>
+          <span class="tech-pill">Typescript</span>
+          <span class="tech-pill">Tailwind</span>
+          <span class="tech-pill">React</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card featured" data-cat="sw" href="https://github.com/Sumanai04/WebAgenticStarterKit" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">WebAgenticStarterKit</div>
+        <div class="project-desc">
+          Dual-agent boilerplate for AI-assisted full-stack development. Routes code generation to DeepSeek V4 and file reading to local Gemma 3 (via Ollama) through a LiteLLM proxy, slashing API costs. Ships with Next.js, FastAPI, and PostgreSQL.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Next.js</span>
+          <span class="tech-pill">FastAPI</span>
+          <span class="tech-pill">PostgreSQL</span>
+          <span class="tech-pill">LiteLLM</span>
+          <span class="tech-pill">DeepSeek</span>
+          <span class="tech-pill">Ollama</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="sw" href="https://github.com/Sumanai04/MobAppOTP" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">MobAppOTP</div>
+        <div class="project-desc">
+          A mobile app testing cloud-based OTP token authentication using Firebase. Built with Flutter and Dart.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Flutter</span>
+          <span class="tech-pill">Dart</span>
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">Firebase</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="ds" href="https://github.com/Sumanai04/Boolean-Retriaval-System" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type ds">Data Science</span>
+        </div>
+        <div class="project-title">Boolean Retrieval System</div>
+        <div class="project-desc">
+          Information retrieval engine supporting boolean queries (AND, OR, NOT) over a news article corpus. Built with NLTK for text processing and Pandas for inverted index construction.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">NLTK</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="ds" href="https://github.com/louiswids/Genetic-Algorithm-Regression-Model" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type ds">Data Science</span>
+        </div>
+        <div class="project-title">Genetic Algorithm Regression Model</div>
+        <div class="project-desc">
+          A regression model analyzing CS:GO weapon skin market trends on Steam. The same genetic algorithm approach also applies to stock market forecasting.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">Seaborn</span>
+          <span class="tech-pill">matplotlib</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="ml" href="https://github.com/Sumanai04/MultiDiseaseClassification_ML" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type ml">ML / DL</span>
+        </div>
+        <div class="project-title">Disease Classification System</div>
+        <div class="project-desc">
+          A machine learning model for classifying multiple diseases based on their risk factors. A comparative study of SVM vs Random Forest on a Kaggle medical dataset.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">SVM</span>
+          <span class="tech-pill">RandomForest</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="ds" href="https://github.com/Sumanai04/Covid-19-Dasboard-App" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type ds">Data Science</span>
+        </div>
+        <div class="project-title">Covid 19 Dashboard App</div>
+        <div class="project-desc">
+          A web dashboard visualizing COVID-19 pandemic data including mortality rates, survival rates, and case trends.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Streamlit</span>
+          <span class="tech-pill">Seaborn</span>
+          <span class="tech-pill">matplotlib</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+      <a class="glass project-card" data-cat="sw" href="https://github.com/Sumanai04/QuizzAppScalable" target="_blank">
+        <div class="project-card-top">
+          <span class="project-type sw">Software Dev</span>
+        </div>
+        <div class="project-title">Redis based Quiz App</div>
+        <div class="project-desc">
+          A web quiz app testing Redis scalability by emulating concurrent user sessions with token-based authentication.
+        </div>
+        <div class="project-tech">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Javascript</span>
+          <span class="tech-pill">CSS</span>
+          <span class="tech-pill">Redis</span>
+        </div>
+        <div class="project-links">
+          <span class="project-link">GitHub ↗</span>
+        </div>
+      </a>
+    <!-- PROJECTS_END -->
+    </div>
+    </div><!-- /projects-scroll -->
+  </div>
+</section>
+
+<section id="dataviz">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <h2 class="section-title">Data Visualizations</h2>
+      <div class="section-line"></div>
+      <span class="section-count">dashboards</span>
+    </div>
+
+    <p class="photo-intro fade-in">
+      Turning raw data into decisions. Each dashboard below is fully interactive — click, filter, and explore the underlying patterns.
+    </p>
+
+    <div class="dataviz-grid stagger">
+      
+      <div class="glass dataviz-card">
+        <div class="dataviz-wrapper">
+          <iframe title="store visual" src="https://app.powerbi.com/view?r=eyJrIjoiY2JiZDFmMTMtZjVkZC00NTE4LTllZWYtNWE2YjlhMzIzMmMxIiwidCI6ImFmMmMwNzM0LWNiNDItNDY0Zi1iNmJmLTJhMjQxYjZhZGE1NiIsImMiOjEwfQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>
+        </div>
+        
+        <div class="dataviz-info">
+          <div class="project-title">Store Performance Analysis</div>
+          <div class="project-tech">
+            <span class="tech-pill">Power BI</span>
+            <span class="tech-pill">Data Analysis</span>
+            <span class="tech-pill">SQL</span>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</section>
+
+<section id="photography">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <h2 class="section-title">Hobbies</h2>
+      <div class="section-line"></div>
+      <span class="section-count">dumps</span>
+    </div>
+
+    <p class="photo-intro fade-in">
+      Building things doesn't stop at the screen. Here's some of what I make with my hands — from custom fight sticks to 3D printers.
+    </p>
+    <p class="photo-intro fade-in">
+      PS. The background is also taken by me :>
+    </p>
+
+    <div class="photo-grid stagger" id="photoGrid">
+      <div class="photo-item">
+        <img src="resources/gallery_1_thumb.webp" data-full="resources/gallery_1.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 1"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Solitary</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_2_thumb.webp" data-full="resources/gallery_2.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 2"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Expanding View</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_3_thumb.webp" data-full="resources/gallery_3.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 3"/>
+        <div class="photo-overlay"><span class="photo-caption">Engineering - Custom Hitbox v3</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_4_thumb.webp" data-full="resources/gallery_4.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 4"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Bloomed</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_5_thumb.webp" data-full="resources/gallery_5.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 5"/>
+        <div class="photo-overlay"><span class="photo-caption">Engineering - Custom Hitbox v2</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_6_thumb.webp" data-full="resources/gallery_6.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 6"/>
+        <div class="photo-overlay"><span class="photo-caption">Engineering - Theseus 3D Printer</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_7_thumb.webp" data-full="resources/gallery_7.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 7"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Colony</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_8_thumb.webp" data-full="resources/gallery_8.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 8"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Standing Out</span></div>
+      </div>
+
+      <div class="photo-item">
+        <img src="resources/gallery_9_thumb.webp" data-full="resources/gallery_9.webp" loading="lazy" decoding="async" class="async-image" onload="this.classList.add('loaded')" alt="Gallery item 9"/>
+        <div class="photo-overlay"><span class="photo-caption">Photography - Growing Further</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+  <div class="lightbox-close" id="lightboxClose" tabindex="0">close ✕</div>
+  <img id="lightboxImg" src="" alt=""/>
+</div>
+
+<section id="about">
+  <div class="container">
+
+    <div class="section-header fade-in">
+      <h2 class="section-title">About</h2>
+      <div class="section-line"></div>
+    </div>
+
+    <div class="about-grid fade-in">
+      <div class="about-text">
+        <h3>Hey, I'm Hylmi</h3>
+        <p>
+          I'm a computer science graduate interested in machine learning and deep learning. I spend my days building models that actually work in production, and my evenings chasing light with a camera.
+        </p>
+        <p>
+          Currently interested in: Data science, computer vision, efficient ML systems, and street photography.
+        </p>
+        <p>
+          Open to collaboration, interesting problems, and nerd discussions.
+        </p>
+        <div style="margin-top:1.75rem;">
+          <a href="resources/Fathi_CV_AI_Latex.pdf" class="btn btn-ghost" download>
+            Download CV ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="glass contact-card">
+        <div class="contact-label">Get in touch</div>
+        <a href="mailto:hylmi1204@gmail.com" class="contact-item">
+          <span>hylmi1204@gmail.com</span>
+          <span>→</span>
+        </a>
+        <a href="https://github.com/Sumanai04" target="_blank" class="contact-item">
+          <span>github.com/Sumanai04</span>
+          <span>→</span>
+        </a>
+        <a href="https://www.linkedin.com/in/fathi-al-adha-hylmi-1378b324b" target="_blank" class="contact-item">
+          <span>linkedin.com/in/fathi-al-adha-hylmi</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-left">© <span id="year"></span> Fathi Al Adha Hylmi</div>
+  <ul class="footer-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#photography">Hobbies</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const toggle = document.getElementById('navToggle');
+const links  = document.getElementById('navLinks');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.fade-in, .stagger').forEach(el => observer.observe(el));
+
+const tabs  = document.querySelectorAll('.filter-tab');
+const cards = document.querySelectorAll('.project-card');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const filter = tab.dataset.filter;
+    cards.forEach(card => {
+      const match = filter === 'all' || card.dataset.cat === filter;
+      card.classList.toggle('hidden', !match);
+    });
+  });
+});
+
+const lightbox      = document.getElementById('lightbox');
+const lightboxImg   = document.getElementById('lightboxImg');
+const lightboxClose = document.getElementById('lightboxClose');
+
+document.querySelectorAll('.photo-item img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.getAttribute('data-full') || img.src; 
+    lightboxImg.alt = img.alt;
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+function closeLightbox() {
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+lightboxClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+
+</script>
+</body>
+</html>
